@@ -1,2 +1,3 @@
-# VamoAi.1
- projetos VamoAI
+# Projetos do VAMO AI
+ 
+ Exercícios feitos do projeto Vamo Ai.
