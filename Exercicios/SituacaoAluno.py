@@ -14,7 +14,7 @@ def situacao(media):
     if media >= 7:
         return "\nAprovado na matéria!\n"
     elif  media < 7 and media >=4:
-        return 'De recuperação! Para ser aprovado na final, você precisa tirar no mínimo:', 10 - media ,'.'
+       print("\nDe recuperação! Para ser aprovado na final, você precisa tirar no mínimo: ", 10 - media,"pontos.")
     else:
         return "\nReprovado!\n"
     
