@@ -13,13 +13,12 @@ def media():
     materia = list()
     disciplinas = list()
     x = int(input("\nQuantas matérias você quer calcular a media das notas? "))
-    cont = 1
+   
     for c in range(0,x):
-        materia.append(str(input(f"\nDiga o nome da {cont}° matéria? ")))
+        materia.append(str(input(f"\nDiga o nome da {c+1}° matéria? ")))
         materia.append(float(input("\nQual é a média da matéria? ")))
         disciplinas.append(materia[:])
         materia.clear()
-        cont += 1
     soma = sum( [x[1] for x in disciplinas])
     print("\n\nA média de suas matérias é: ",round((soma/x),2))
     print("\n\nAs matérias que você informou são:")
