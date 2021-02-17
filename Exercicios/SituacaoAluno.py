@@ -12,13 +12,14 @@ print("******************************")
 
 def situacao(media):
     if media >= 7:
-        return "\nAprovado na matéria!\n"
+        print( f"\nAprovado em {materia}\n")
     elif  media < 7 and media >=4:
-       print("\nDe recuperação! Para ser aprovado na final, você precisa tirar no mínimo: ", 10 - media,"pontos.")
+       print(f"\nDe recuperação em {materia}! Para ser aprovado na final, você precisa tirar no mínimo: ", 10 - media,"pontos.")
     else:
-        return "\nReprovado!\n"
+        return f"\nReprovado em {materia}!\n"
     
-
+materia = input("Qual o nome da matéria que você quer saber se passou? ")
 media = float(input("\nDigite a média da matéria: \n"))
+
 
 print(situacao(media))
